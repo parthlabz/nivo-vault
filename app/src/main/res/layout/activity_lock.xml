@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center" android:padding="32dp" android:background="@drawable/bg_gradient_main">
+    
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enter PIN" android:textColor="@color/text_primary" android:textSize="24sp" android:textStyle="bold" />
+    
+    <EditText android:id="@+id/pinInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:hint="Enter 1234" android:inputType="numberPassword" android:textColor="@color/text_primary" android:textColorHint="@color/text_secondary" android:background="@drawable/bg_glass_card" android:padding="16dp" />
+    
+    <Button android:id="@+id/unlockBtn" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="16dp" android:text="Unlock with PIN" android:background="@drawable/bg_button_gradient" android:textColor="#FFFFFF" />
+    
+    <Button android:id="@+id/fingerprintBtn" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="16dp" android:text="Use Fingerprint" android:background="@drawable/bg_glass_card" android:textColor="@color/text_primary" />
+</LinearLayout>

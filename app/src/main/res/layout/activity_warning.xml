@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#0E1116" android:padding="24dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⚠️ IMPORTANT" android:textColor="#FF9F1C" android:textSize="28sp" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:textColor="#FFFFFF" android:textSize="16sp" android:lineSpacingExtra="6dp"
+            android:text="NIVO VAULT is a local-only storage app.\n\nYour files are stored ONLY on this device.\n\nIf you uninstall the app, lose your phone, or reset your device, your vault files will be permanently lost.\n\nThere is NO cloud backup and NO recovery system.\n\n✅ TO PROTECT YOUR FILES:\n\n• Use the 'Export Vault Backup' option in Settings regularly.\n• Remember your PIN (default: 1234).\n• Do not uninstall the app if you have important files inside." />
+        <Button android:id="@+id/ackBtn" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="32dp" android:text="I Understand — Continue" android:background="#9D4EDD" android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

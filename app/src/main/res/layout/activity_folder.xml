@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="24dp" android:background="@drawable/bg_gradient_main">
+    
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+        <TextView android:id="@+id/folderTitleTv" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textColor="@color/text_primary" android:textSize="24sp" android:textStyle="bold" />
+        <Button android:id="@+id/sortBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sort" android:backgroundTint="@color/accent_purple" android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <TextView android:id="@+id/folderUsedTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:textColor="@color/text_secondary" />
+    <Button android:id="@+id/addFileBtn" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="24dp" android:text="+ Secure Add File" android:background="@drawable/bg_button_gradient" android:textColor="#FFFFFF" />
+    
+    <TextView android:id="@+id/emptyFilesView" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:text="This folder is empty." android:textColor="@color/text_secondary" android:textSize="18sp" android:visibility="gone" />
+    
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/filesRv" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="16dp" android:layout_weight="1" />
+    
+    <!-- Loading Overlay -->
+    <LinearLayout android:id="@+id/loadingOverlay" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:background="#CC0E1116" android:visibility="gone">
+        <ProgressBar android:layout_width="64dp" android:layout_height="64dp" android:indeterminateTint="@color/accent_purple" />
+        <TextView android:id="@+id/loadingText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Importing file..." android:textColor="@color/text_primary" android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

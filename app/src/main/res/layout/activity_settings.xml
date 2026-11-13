@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_main" android:padding="24dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Settings" android:textColor="@color/text_primary" android:textSize="24sp" android:textStyle="bold" />
+        
+        <TextView android:id="@+id/settingsText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:textColor="@color/text_secondary" android:textSize="14sp" />
+
+        <Button android:id="@+id/setPinBtn" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="24dp" android:text="Change Deletion PIN" android:background="@drawable/bg_button_gradient" android:textColor="#FFFFFF" />
+        
+        <Button android:id="@+id/autoLockBtn" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="16dp" android:text="Auto-Lock Timer" android:background="@drawable/bg_button_gradient" android:textColor="#FFFFFF" />
+        
+        <Button android:id="@+id/exportBtn" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="16dp" android:text="Export Vault Backup" android:background="@drawable/bg_button_gradient" android:textColor="#FFFFFF" />
+
+        <!-- Creator Card -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="Created By" android:textColor="@color/accent_purple" android:textStyle="bold" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Parth Patel" android:textColor="@color/text_primary" android:textSize="18sp" android:textStyle="bold" />
+
+        <TextView android:id="@+id/githubBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="🔗 GitHub: github.com/parthlabz" android:textColor="@color/accent_blue" android:textSize="14sp" android:padding="8dp" android:background="?android:attr/selectableItemBackground" />
+
+        <TextView android:id="@+id/linkedinBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="🔗 LinkedIn: Parth Patel" android:textColor="@color/accent_blue" android:textSize="14sp" android:padding="8dp" android:background="?android:attr/selectableItemBackground" />
+
+        <!-- Donate Card -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="Support the Developer" android:textColor="@color/accent_purple" android:textStyle="bold" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="If Nivo Vault has helped you, consider supporting me 🙏" android:textColor="@color/text_secondary" android:textSize="14sp" />
+
+        <TextView android:id="@+id/upiTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="UPI: patel-076@ptaxis" android:textColor="@color/text_primary" android:textSize="16sp" android:textStyle="bold" android:padding="16dp" android:background="@drawable/bg_glass_card" android:gravity="center" />
+
+        <Button android:id="@+id/payUpiBtn" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="8dp" android:text="💸 Donate via UPI" android:background="@drawable/bg_button_gradient" android:textColor="#FFFFFF" />
+
+        <Button android:id="@+id/copyUpiBtn" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="8dp" android:text="Copy UPI ID" android:background="@drawable/bg_glass_card" android:textColor="@color/text_primary" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="Nivo Vault v1.0 — Made with ❤️ by Parth Patel" android:textColor="@color/text_secondary" android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>

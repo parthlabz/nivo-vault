@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#0E1116" android:padding="24dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NIVO VAULT" android:textColor="#FFFFFF" android:textSize="28sp" android:textStyle="bold" android:letterSpacing="0.1" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Terms of Use &amp; Privacy" android:textColor="#9D4EDD" android:textSize="16sp" android:textStyle="bold" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:textColor="#FFFFFF" android:textSize="14sp" android:lineSpacingExtra="6dp"
+            android:text="Welcome to Nivo Vault.\n\nBefore you continue, please read and agree to the following:\n\n1. LOCAL-ONLY STORAGE\nAll your files are stored only on this device. Nivo Vault does not upload any file to the internet or any cloud service.\n\n2. DATA LOSS RISK\nIf you uninstall the app, lose your phone, or reset the device, your files will be permanently lost. We recommend using the Export Backup feature regularly.\n\n3. SECURITY\nNivo Vault uses a PIN and optional fingerprint to protect your data. Deleting files requires the PIN. You are responsible for remembering it.\n\n4. NO TRACKING\nWe do not collect any data, statistics, or analytics. There are no ads.\n\n5. YOUR RESPONSIBILITY\nYou are responsible for the files you store and how you use the app.\n\nBy tapping 'I Agree', you accept these terms." />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Made with ❤️ by Parth Patel" android:textColor="#9D4EDD" android:textSize="12sp" />
+
+        <Button android:id="@+id/agreeBtn" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="24dp" android:text="I Agree — Continue" android:background="#9D4EDD" android:textColor="#FFFFFF" android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

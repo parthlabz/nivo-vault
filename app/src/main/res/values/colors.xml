@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- NEW PREMIUM COLORS (Phase 6) -->
+    <color name="bg_base">#0A0713</color>
+    <color name="bg_surface">#16112B</color>
+    <color name="bg_card">#1F1838</color>
+    
+    <color name="accent_purple">#9D4EDD</color>
+    <color name="accent_blue">#4CC9F0</color>
+    <color name="accent_pink">#F72585</color>
+    <color name="accent_green">#06D6A0</color>
+    <color name="accent_orange">#FF9F1C</color>
+    
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#A09EB6</color>
+    <color name="text_hint">#6C6883</color>
+
+    <!-- OLD COLORS (Phases 1-5) - Aliased to new colors so nothing breaks -->
+    <color name="bg">@color/bg_base</color>
+    <color name="surface">@color/bg_surface</color>
+    <color name="surface_high">@color/bg_card</color>
+    <color name="textPrimary">@color/text_primary</color>
+    <color name="textSecondary">@color/text_secondary</color>
+    <color name="textHint">@color/text_hint</color>
+    <color name="accent">@color/accent_purple</color>
+    <color name="accent_soft">#2A1E4A</color>
+    <color name="danger">#FF4D4D</color>
+    <color name="danger_soft">#4A1F2A</color>
+    <color name="success">@color/accent_green</color>
+    <color name="success_soft">#1F3A2A</color>
+    <color name="divider">#2A2342</color>
+</resources>

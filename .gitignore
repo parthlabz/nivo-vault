@@ -1,0 +1,26 @@
+# Gradle files
+.gradle/
+build/
+app/build/
+local.properties
+*.iml
+.idea/
+
+# Signing secrets — NEVER COMMIT
+*.keystore
+*.jks
+*.properties
+nivo-release.keystore
+release.keystore
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Code on the Go specific
+.cg/
+
+# Build outputs
+*.apk
+*.aab
+output-metadata.json

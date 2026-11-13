@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0A0713"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@android:drawable/ic_lock_lock"
+        android:tint="#9D4EDD" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Choose Security Method"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="How do you want to secure your app?"
+        android:textColor="#A09EB6"
+        android:textSize="14sp" />
+
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+
+    <!-- Options -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        
+        <!-- Option 1: Password -->
+        <LinearLayout
+            android:id="@+id/optionPassword"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/bg_glass_card"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_lock_idle_lock" android:tint="#FFFFFF" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Password Only" android:textColor="#FFFFFF" android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <!-- Option 2: Fingerprint -->
+        <LinearLayout
+            android:id="@+id/optionFingerprint"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/bg_glass_card"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_info_details" android:tint="#4CC9F0" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fingerprint" android:textColor="#FFFFFF" android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <!-- Option 3: Both -->
+        <LinearLayout
+            android:id="@+id/optionBoth"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/bg_glass_card"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_myplaces" android:tint="#F72585" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Password + Fingerprint" android:textColor="#FFFFFF" android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <!-- Option 4: No Lock -->
+        <LinearLayout
+            android:id="@+id/optionNone"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/bg_glass_card"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp">
+            <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_close_clear_cancel" android:tint="#A09EB6" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No Lock" android:textColor="#FFFFFF" android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_button_gradient"
+        android:text="Continue"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textAllCaps="false" />
+        
+    <Space android:layout_width="match_parent" android:layout_height="24dp" />
+</LinearLayout>
